@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ana Valdivia</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <script src="https://kit.fontawesome.com/0b5f1c4663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <div class="home">
+                <div class="typewriter">
+                        <h1>Ana Valdivia</h1>
+                </div>
+            <p>Hi! I am a full stack developer with understanding of web programming languages, database technologies, and front end design. I have experience with MySQL and MERN stacks, comprised of MongoDB, Express, React and Node.js.</p>
+            <p>
+                <a href="AnaValdiviaResume (4).pdf" style="color: #cc652d">RESUME</a>
+                |
+                <a href="https://github.com/anabee">
+                    <span style="font-size: 1.5em; color:#cc652d; text-align: center;">
+                    <i class="fab fa-github"></i>
+                </span>
+                </a>
+                |
+                <a href="https://www.linkedin.com/in/ana-valdivia-69ab8b106/">
+                    <span style="font-size: 1.5em; color:#cc652d; text-align: center;">
+                        <i class="fab fa-linkedin"></i>
+                </span></a>
+            </p>
+            <p>Hawthorne, CA</p>
+            <img id="portrait" src="images/Me.jpeg">
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="portfolio">
+                <div class="row">
+    
+                    <!-- First (and only column) to hold in portfolio images-->
+                    <div class="col">
+            
+                    <!-- First two boxes -->
+                    <div class="row">
+                        <div class="col forcecol">
+                            <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/local-results.png" alt="hangman">
+                            <div class="overlay">
+                                <div class="text">
+                                        <a href="https://elliotfouts.github.io/local-eats">Local Eats</a>
+                                </div>
+                        </div>
+                    </div>
+            
+                    <div class="col forcecol">
+                        <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/Schedule_proj.png" alt="rpg game icons">
+                        <div class="overlay">
+                            <div class="text">
+                                    <a href="https://anabee.github.io/DailyWorkSchedule/">Daily Schedule</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            <br>
+                    <!-- Second two boxes -->
+                    <div class="row">
+                        <div class="col forcecol">
+                            <img class="portfolio-image" src="images/weTrivia.png" alt="trivia contestants">
+                            <div class="overlay">
+                                <div class="text">
+                                        <a href="https://intense-earth-41726.herokuapp.com/">WeTrivia</a>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <!-- <div class="col-sm-6">
+                        <img class="portfolio-image" src="./images/widget.jpeg" alt="phone on laptop">
+                        <div class="box">
+                                <a href="https://anabee.github.io/DailyWorkSchedule/">Coding Quiz</a>
+                        </div>
+                    </div> -->
+                    </div>
+        
+                    <!-- Third two boxes -->
+                    <!-- <div class="row">
+                        <div class="col-sm-6">
+                            <img class="portfolio-image" src="./images/rps.png" alt="rock, papper, scissors">
+                            <div class="box">Rock Paper Scissors</div>
+                        </div>
+        
+                        <div class="col-sm-6"></div>
+                    </div> -->
+                                            
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form>
+            <div class="contact">
+                <!-- This is the firs input -->
+                <div class="input-group mb-3">
+                    <label>Name
+                    <input id="nameInput" type="text" size="40" class="form-control" placeholder="J Valdivia" aria-label="Username" aria-describedby="basic-addon1">
+                    </label>
+                </div>
+    
+                <!-- This is the second input bar -->
+                <div class="input-group mb-3">
+                    <label>Email
+                    <input id="emailInput" type="text" size="40" class="form-control" placeholder="jvaldivia@gmail.com" aria-label="Username" aria-describedby="basic-addon1">
+                    </label>
+                </div>
+    
+                <!-- Textarea -->
+                <div class="input-group">
+                    <label>Message
+                    <textarea id="textInput" class="form-control" cols="40" rows="10" aria-label="With textarea"></textarea>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-info buttonstyle" >Submit</button>
+            </div>
+        </form>
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

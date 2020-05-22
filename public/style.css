@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #333;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.container-fluid {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* SMOOTH SCROLL */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+    color: #cc652d;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-emphasis: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section h1 {
+    font-size: 3rem;
+}
+
+section p {
+    font-size: 1.5rem;
+    animation: fadein 8s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#home {
+    background-image: url(https://p0.piqsels.com/preview/700/873/256/gray-and-orange-clouds.jpg);
+    background-repeat: no-repeat;
+    background: linear-gradient(to top left, #ebebeb 49.8%, #fff 50%);
+    /* background-size:cover; */
+}
+
+
+#portfolio {
+    background: linear-gradient(to top left, #fff 49.8%, #ebebeb 50%);
+
+}
+
+#contact {
+    background: linear-gradient(to top left, #ebebeb 49.8%, #fff 50%);
+
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+.home {
+    width: 100%;
+    align-items: center; 
+    text-align: center;
+}
+
+.contact {
+    width: 100%;
+}
+
+
+.container {
+    width: 100%;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+}
+
+.input-group {
+    width: 100%;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+}
+
+#portrait {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.portfolio-image {
+    background: transparent no-repeat center;
+    background-size: cover;
+    width: 260px!important;
+    /* height: 200px; */
+    border-radius: 50%;
+    
+}
+
+.forceimg {
+    height: 260px!important;
+}
+
+.forcecol {
+    text-align: center!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+.overlay{
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 300px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #cc652d; */
+}
+
+.forcecol:hover .overlay {
+    opacity: 1;
+}
+
+.text a {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+}
+
+/* .box {
+    background-color: #cc652d;
+    opacity: 0.9;
+    height: 50px;
+    position: relative;
+    bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 300px;
+    border-radius:0 25px 0 25px;
+} */
+
+/* .box a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: #333;
+    text-decoration: none;
+} */
+
+/* .profilepic {
+    width: 100%;
+    background: transparent no-repeat center;
+    background-size: cover;
+    float: left;
+    margin: 10px;
+    padding-left: 10px;
+    float: left;
+    height: 200px;
+    border-radius: 50%;
+} */
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #cc652d; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end ;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #cc652d; }
+  }
+
+  button {
+      background-color: #fff!important;
+      color: #333!important;
+      border: none!important;
+      border-radius: 0!important;
+  }
+
+  button:hover {
+      background-color: #cc652d!important;
+      color: #fff!important;
+      transition: 0.6s ease-in-out;
+  }
