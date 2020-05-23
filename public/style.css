@@ -247,3 +247,7 @@ section p {
       color: #fff!important;
       transition: 0.6s ease-in-out;
   }
+
+  .sentBtn {
+    border-radius: 50%!important;
+  }

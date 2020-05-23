@@ -1,3 +1,4 @@
+const submitBtn = $(".buttonstyle");
 
 $(".navbar a").on("click", function (e){
     if(this.hash !== '') {
@@ -28,5 +29,10 @@ $("form").on("submit", (e)=>{
         console.log("Server received our data")
     })
 
+    submitBtn.html("<i class='far fa-paper-plane fa-2x'></i>")
+    submitBtn.addClass("sentBtn")
+    
+
+    $("form").trigger("reset");
 
 })
