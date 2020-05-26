@@ -36,3 +36,4 @@ $("form").on("submit", (e)=>{
     $("form").trigger("reset");
 
 })
+

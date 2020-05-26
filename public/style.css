@@ -144,12 +144,12 @@ section p {
     justify-content: center!important;
 }
 
-.overlay{
+/* .overlay{
     width: 300px;
     border-radius: 50%;
     opacity: 0;
     transition: .5s ease;
-}
+} */
 
 .forcecol:hover .overlay {
     opacity: 1;
@@ -267,4 +267,15 @@ footer a {
 
 footer a:hover {
     color: #cc652d;
+}
+
+/* MODALS */
+
+.modal-body p {
+    font-size: 1rem!important;
+    animation: fadein 0s;
+}
+
+.modalBtn {
+    color: #333;
 }

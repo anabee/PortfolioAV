@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <script src="https://kit.fontawesome.com/0b5f1c4663.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -47,62 +48,106 @@
 
         <section id="portfolio">
             <div class="portfolio">
+
                 <div class="row">
-    
-                    <!-- First (and only column) to hold in portfolio images-->
-                    <div class="col">
-            
-                    <!-- First two boxes -->
-                    <div class="row">
-                        <div class="col forcecol">
+                    <div class="col 1a forcecol">
                             <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/local-results.png" alt="hangman">
                             <div class="overlay">
                                 <div class="text">
-                                        <a href="https://elliotfouts.github.io/local-eats">Local Eats</a>
+                                        <button type="button" class="btn btn-info btn-lg modalBtn" data-toggle="modal" data-target="#localeatsModal">Local Eats</button>
                                 </div>
-                        </div>
-                    </div>
-            
-                    <div class="col forcecol">
-                        <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/Schedule_proj.png" alt="rpg game icons">
-                        <div class="overlay">
-                            <div class="text">
-                                    <a href="https://anabee.github.io/DailyWorkSchedule/">Daily Schedule</a>
                             </div>
-                        </div>
+
+                            <div id="localeatsModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h4 class="modal-title">Local Eats</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Local Eats was founded in 2020 by four UCLA Extension bootcamp students to help people find local restaurants. In addition to finding new restaurants, you can use Local Eats to find everything you need to know about the restaurant including the caliber, average cost for two, phone number, and more! You can also find suggested nearby restaurants.</p>
+                        
+                                            <p>Server-side APIs used: Google Maps & Zomato</p>
+                                            
+                                            <p>CSS Framework: Skeleton</p>
+                        
+                                            <p>Visit: <a href="https://elliotfouts.github.io/local-eats">Local Eats</a></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
+                    <div class="col 1b forcecol">
+                            <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/Schedule_proj.png" alt="rpg game icons">
+                            <div class="overlay">
+                                <div class="text">
+                                    <button type="button" class="btn btn-info btn-lg modalBtn" data-toggle="modal" data-target="#dailySchedModal">Daily Work Schedule</button>
+                                </div>
+                            </div>
+
+                            <div id="dailySchedModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Daily Schedule</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>A simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+                                                            
+                                            <p>CSS Framework: Bootstrap</p>
+                                                
+                                            <p>Visit: <a href="https://anabee.github.io/DailyWorkSchedule/">Daily Schedule</a></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-            <br>
-                    <!-- Second two boxes -->
-                    <div class="row">
-                        <div class="col forcecol">
+                </div>
+                <div class="row">
+                    <div class="col 1c forcecol">
                             <img class="portfolio-image" src="images/weTrivia.png" alt="trivia contestants">
                             <div class="overlay">
                                 <div class="text">
-                                        <a href="https://intense-earth-41726.herokuapp.com/">WeTrivia</a>
+                                    <button type="button" class="btn btn-info btn-lg modalBtn" data-toggle="modal" data-target="#weTriviaModal">WeTrivia</button>
+                                </div>
+                            </div>
+
+                            <div id="weTriviaModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">WeTrivia</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>WeTrivia is a fun, fast-paced trivia competition for you and your friends to test your knowledge in a variety of interesting subjects. Challenge other players to beat your high score, and share your experiences using an innovative chat feature as you play.</p>
+                                            
+                                            <p>Server-side APIs used: Open Trivia</p>
+                                            
+                                            <p>CSS Framework: Bulma</p>
+                        
+                                            <p>Visit: <a href="https://intense-earth-41726.herokuapp.com/">WeTrivia</a></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                     </div>
-        
-                    <!-- <div class="col-sm-6">
-                        <img class="portfolio-image" src="./images/widget.jpeg" alt="phone on laptop">
-                        <div class="box">
-                                <a href="https://anabee.github.io/DailyWorkSchedule/">Coding Quiz</a>
-                        </div>
-                    </div> -->
+                    <div class="col 1d forcecol">
+                            <img class="portfolio-image forceimg" src="https://raw.githubusercontent.com/anabee/portfolio-valdivia/master/images/local-results.png" alt="hangman">
+                            <div class="overlay">
+                                <div class="text">
+                                        <button type="button" class="btn btn-info btn-lg modalBtn" data-toggle="modal" data-target="#localeatsModal">Local Eats</button>
+                                </div>
+                            </div>
                     </div>
-        
-                    <!-- Third two boxes -->
-                    <!-- <div class="row">
-                        <div class="col-sm-6">
-                            <img class="portfolio-image" src="./images/rps.png" alt="rock, papper, scissors">
-                            <div class="box">Rock Paper Scissors</div>
-                        </div>
-        
-                        <div class="col-sm-6"></div>
-                    </div> -->
-                                            
-                </div>
                 </div>
             </div>
         </section>
@@ -156,6 +201,7 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
