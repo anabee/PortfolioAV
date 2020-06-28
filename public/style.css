@@ -11,6 +11,11 @@ body {
     height: 100vh;
 }
 
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
 .container-fluid {
     padding: 0;
     width: 100%;
@@ -146,13 +151,6 @@ section p {
     padding: 5px!important;
 }
 
-/* .overlay{
-    width: 300px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: .5s ease;
-} */
-
 .forcecol:hover .overlay {
     opacity: 1;
 }
@@ -169,43 +167,6 @@ section p {
     text-align: center;
     color: #333;
 }
-
-/* .box {
-    background-color: #cc652d;
-    opacity: 0.9;
-    height: 50px;
-    position: relative;
-    bottom: 40px;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 20px;
-    width: 300px;
-    border-radius:0 25px 0 25px;
-} */
-
-/* .box a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.box a:hover {
-    color: #333;
-    text-decoration: none;
-} */
-
-/* .profilepic {
-    width: 100%;
-    background: transparent no-repeat center;
-    background-size: cover;
-    float: left;
-    margin: 10px;
-    padding-left: 10px;
-    float: left;
-    height: 200px;
-    border-radius: 50%;
-} */
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -252,6 +213,10 @@ section p {
 footer {
     color: #ebebeb;
     padding:5px;
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
 }
 
 .footerdiv {
@@ -260,7 +225,7 @@ footer {
 }
 
 footer i {
-    padding: 4px;
+    padding: 2px;
 }
 
 footer a {
